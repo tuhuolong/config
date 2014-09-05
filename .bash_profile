@@ -16,6 +16,12 @@ export PATH="$PATH:$HOME/android-tool/android-ndk-r9d"
 alias ll="ls -l --color"
 alias la="ls -l -a --color"
 alias lh="ls -ld .* --color=auto"
+
+# kill process
+fkill(){
+    ps aux | grep "$1" | grep -v grep | awk '{print $2;}' | while read p; do kill -9 $p; done
+}
+
 export CLICOLOR=1
 export LSCOLORS=gxfxaxdxcxegedabagacad
 export GREP_OPTIONS="--color=auto"
