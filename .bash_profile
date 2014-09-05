@@ -13,9 +13,9 @@ export PATH="$PATH:$HOME/android-tool/android-sdk/platform-tools"
 export PATH="$PATH:$HOME/android-tool/android-sdk/tools"
 export PATH="$PATH:$HOME/android-tool/android-ndk-r9d"
 
-alias ll="ls -l --color"
-alias la="ls -l -a --color"
-alias lh="ls -ld .* --color=auto"
+alias ll="ls -lh --color"
+alias la="ls -lh -a --color"
+alias lh="ls -lhd .* --color=auto"
 
 # kill process
 fkill(){
